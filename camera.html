@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>hexigon demo 6</title>
+    <title>PoseNet - Camera Feed Demo</title>
     <style>
         body {
             display: flex;
@@ -112,7 +112,7 @@
     </div>
     <div id="loading" style='position: relative; left: 0'>
         <span class="spinner-text" id="status">
-            Loading model...
+            Loading PoseNet model...
         </span>
         <div class="sk-spinner sk-spinner-pulse"></div>
     </div>
@@ -133,7 +133,10 @@
     <div class="footer">
         <div class="footer-text">
           <p>
-
+            Pose Animator runs TF.js <strong>FaceMesh</strong> and <strong>PoseNet</strong> models to animate SVG illustrations with camera feed / static images.<br>
+            It currently supports <strong>single-pose</strong>, <strong>single-face</strong> detection, and has been tested on Destkop Chrome & iOS Safari.
+            <br>
+            (PoseNet model config - MobileNetV1, output stride 16, quant bytes 2)
           </p>
         </div>
       </div>
